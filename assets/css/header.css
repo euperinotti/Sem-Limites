@@ -169,33 +169,11 @@ header {
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-#profile-icon svg {
+#profile-icon img, #cart-icon img {
     height: 35px;
     width: 35px;
     margin-right: 30px;
-}
-
-#profile-icon .st0 {
-    transition: 300ms;
-}
-
-#profile-icon:hover .st0{
-    fill: rgb(190, 190, 190);
-}
-
-#cart-icon svg {
-    height: 35px;
-    width: 35px;
-    margin-left: 30px;
-}
-
-#cart-icon .cart-icon-svg {
-    transition: 300ms;
-}
-
-#cart-icon:hover .cart-icon-svg{
-    fill: rgb(190, 190, 190);
 }
