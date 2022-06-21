@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Airside Sans;
+    src: url(../fonts/AirsideSans-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
