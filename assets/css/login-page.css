@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Airside Sans;
+    src: url(../fonts/AirsideSans.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+body {
+    margin: 0px;
+}
+
+/*----------AREA DO FORMULARIO GERAL----------*/
+
+#login-register-box {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------FORMULARIO LADO ESQUERDO----------*/
+
+.login-form {
+    width: 300px;
+    height: 400px;
+}
+
+.login-left-side {
+    width: 300px;
+    height: 500px;
+}
+
+.login-main-headline {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.login-main-headline span{
+    width: 300px;
+    height: 40px;
+    font-family: Airside Sans;
+    font-size: 40px;
+}
+
+.login-email-box, .login-password-box {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.login-email-headline span, .login-password-headline span {
+    width: 300px;
+    height: 20px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+}
+
+.login-email-headline, .login-password-headline {
+    margin-bottom: 10px;
+}
+
+.login-email-input input[type=email], .login-password-input input[type=password] {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.login-password-forgot {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.login-password-forgot span {
+    height: 20px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 15px;
+    color: black;
+}
+
+.login-password-forgot span a {
+    text-decoration: underline;
+    color: black;
+}
+
+.login-submit-box {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    height: 50px;
+}
+
+.login-submit-box input[type=submit] {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+/*----------LINHA DIVISÓRIA----------*/
+
+.line-divisor {
+    width: 2px;
+    height: 400px;
+    background-color: #e4e4e4;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/*----------FORMULARIO LADO DIREITO----------*/
+
+.register-form {
+    width: 390px;
+    height: auto;
+}
+
+.register-right-side {
+    width: 390px;
+    height: 500px;
+}
+
+.register-main-headline {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.register-main-headline span{
+    width: 300px;
+    height: 40px;
+    font-family: Airside Sans;
+    font-size: 40px;
+}
+
+.register-name-box, .register-email-box, .register-password-box {
+    width: 390px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.register-name-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-first-name-box, .register-last-name-box {
+    height: auto;
+    width: 190px;
+}
+
+.register-first-name-headline span, .register-last-name-headline span {
+    height: 20px;
+    width: 190px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+}
+
+.register-email-headline span, .register-password-headline span {
+    width: 180px;
+    height: 20px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+}
+
+.register-first-name-headline, .register-last-name-headline, .register-email-headline, .register-password-headline {
+    margin-bottom: 10px;
+}
+
+.register-first-name-input input[type=text], .register-last-name-input input[type=text] {
+    width: 180px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.register-email-input input[type=email], .register-password-input input[type=password] {
+    width: 390px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.register-submit-box {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 390px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.register-submit-box input[type=submit] {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}

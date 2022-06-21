@@ -1,0 +1,146 @@
+section {
+    width: 1150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cl-header {
+    font-family: Bahnschrift;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.cr-header {
+    font-family: Bahnschrift;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.cart-left {
+    width: 70%
+}
+
+.cart-right {
+    width: 30%;
+    border-left: 2px solid #e4e4e4;
+}
+
+.cl-product-box {
+    width: 95%;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Bahnschrift;
+    margin-bottom: 30px;
+}
+
+.cl-pr-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.cl-pr-image {
+    padding: 10px;
+}
+
+.cl-pr-image img {
+    width: 90px;
+}
+
+.cl-pr-description {
+    margin-left: 15px;
+    font-family: Bahnschrift;
+    font-size: 16px;
+}
+
+.cl-pr-right {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.cl-pr-amount {
+    width: 130px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cl-pr-amount input {
+    background-color: #bbbbbb;
+    border: none;
+    width: 30px;
+    font-family: Bahnschrift;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.cart-right {
+    padding-left: 30px;
+    font-family: Bahnschrift;
+}
+
+.cr-sumary-list {
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cr-sumary-list span {
+    text-transform: uppercase;
+    width: 50%;
+    height: 40px;
+}
+
+.cr-sumary-total {
+    height: 70px;
+    font-family: Bahnschrift;
+    font-size: 19px;
+    border-top: 2px solid #e4e4e4;
+    border-bottom: 2px solid #e4e4e4;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-right input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #1b1b1b;
+    font-family: Bahnschrift;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cartmsg {
+    font-family: Bahnschrift;
+    font-size: 23px;
+}
+
+.cl-pr-amount a {
+    color: black;
+    font-family: Bahnschrift;
+    font-weight: bolder;
+}

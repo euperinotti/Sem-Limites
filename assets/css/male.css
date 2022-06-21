@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Airside Sans;
+    src: url(../fonts/AirsideSans.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Dades;
+    src: url(../fonts/Dades.ttf);
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+#male-section {
+    width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.male-section-top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.male-section-top-left {
+    width: fit-content;
+}
+
+.male-section-top-left h1{
+    font-family: Airside Sans;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.order-options {
+    position: absolute;
+    top: 170px;
+    border: 1px solid #b4b4b4;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 15px;
+    display: none;
+    background-color: white;
+}
+
+.order-options ul a {
+    color: black;
+}
+
+.order-options ul a:hover {
+    text-decoration: underline;
+}
+
+.order-options ul {
+    list-style-type: none;
+    font-size: 16px;
+    font-family: Bahnschrift;
+}
+
+.order-options ul li {
+    margin-top: 3px;
+}
+
+
+.male-section-top-right {
+    height: inherit;
+    width: 70%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.male-section-top-right-filter, .male-section-top-right-order {
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.male-section-top-right span {
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.male-section-top-right-filter img, .male-section-top-right-order img {
+    height: 12px;
+}
+
+aside {
+    display: none;
+    width: 200px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.aside-headline {
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+}
+
+.aside-menu-options {
+    user-select: none;
+    cursor: pointer;
+}
+
+.aside-options{
+    height: auto;
+    border-top: 1px solid #b4b4b4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside-options-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aside-options-container span {
+    font-family: Bahnschrift;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.aside-options-container img {
+    width: 15px;
+}
+
+.aside-img.active {
+    transform: rotate(45deg);
+}
+
+.aside-img {
+    transition: 200ms;
+}
+
+.aside-suboptions-container {
+    display: none;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    margin-top: 10px;
+}
+
+.aside-suboptions-container input[type=checkbox] {
+    margin-right: 5px;
+}
+
+.male-section-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;  
+}
+
+.male-section-box {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.male-section-box-top img:hover {
+    width: 220px;
+    height: 220px;
+}
+
+.male-section-box-top {
+    width: 100%;
+    background-color: #EBEEEF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.male-section-box-top img {
+    width: 200px;
+    height: 200px;
+    transition: 200ms;
+}
+
+.male-section-box-bottom {
+    width: 100%;
+    height: max-content;
+    padding: 10px 15px;
+    background-color: #2c2c2c;
+}
+
+.male-section-box-bottom h1 {
+    font-family:  Bahnschrift;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.male-section-box-bottom h1:hover {
+    color: rgb(190, 190, 190);
+}
+
+.male-section-box-bottom span {
+    font-family:  Bahnschrift;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(190, 190, 190);
+}
+
+.male-section-top-right-order select{
+    font-size: 18px;
+    font-family:  Bahnschrift;
+    font-weight: lighter;
+    width: 180px;
+    height: 35px;
+}
+
+.filter-btn {
+    background-color: #1b1b1b;
+    font-size: 18px;
+    font-family:  Bahnschrift;
+    font-weight: lighter;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+}

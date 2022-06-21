@@ -1,0 +1,160 @@
+#profile-section {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-data {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.main-header {
+    font-family: Airside Sans;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+.pd-left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pd-left-icon svg {
+    width: 150px;
+}
+
+.pd-left span {
+    margin-top: 20px;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.pd-right {
+    width: 70%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+}
+
+.form-section {
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 40px;
+}
+
+.form-section .form-header {
+    font-family: Bahnschrift;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pd-right form {
+    width: 100%;
+}
+
+.pd-right form label {
+    width: 100%;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+}
+
+.pd-right form input{
+    margin-top: 15px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+}
+
+.pd-right form select {
+    display: block;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    background-color: #e4e4e4;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+    border: none;
+    text-indent: 10px;
+}
+
+.pd-right .profile-buttons-box, .pd-right form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-buttons-box button, form input[type="submit"] {
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    border: none;
+    padding: 10px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.profile-buttons-box .logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+
+}
+
+.profile-buttons-box .logout svg {
+    height: 40px;
+    margin-left: 25px;
+}
+
+.pd-right .profile-buttons-box button:hover {
+    background-color: black;
+    transition: 200ms;
+}
+
+.pd-right .input-box-4 ::-webkit-inner-spin-button, .pd-right .input-box-4::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+.pd-right .register-cpf-input ::-webkit-inner-spin-button, .pd-right .register-cpf-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}

@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Airside Sans;
+    src: url(../fonts/AirsideSans.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Dades;
+    src: url(../fonts/Dades.ttf);
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+    padding: 0;
+}
+
+.admin-add-client, .admin-add-product, .admin-add-admin {
+    background-color: white;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-headline {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Bahnschrift;
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.register-headline a {
+    color: red;
+    margin-left: 50px;
+}
+
+#aap-form, #aac-form, #aaa-form {
+    width: 1000px;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.register-name-box, .register-street-box {
+    grid-column-start:1 ;
+    grid-column-end:3 ;
+}
+
+.register-lastname-box {
+    grid-column-start:3 ;
+    grid-column-end:4 ;
+}
+
+.register-name-box, .register-last-name-box {
+    grid-row-start: 1;
+}
+
+.register-number-box {
+    grid-row-start: 3;
+}
+
+.register-email-box,.register-password-box {
+    grid-row-start: 2;
+}
+
+.register-email-box {
+    grid-column-start:1 ;
+    grid-column-end:3 ;
+}
+
+.register-password-box {
+    grid-column-start:3 ;
+    grid-column-end:5 ;
+}
+
+.form-header{
+    height: 50px;
+    font-size: 35px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.admin-add-client form, .admin-add-admin form {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.admin-add-client label, .admin-add-product label, .admin-add-admin label {
+    width: 100%;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+}
+
+.admin-add-client .box-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin-add-client form input, .admin-add-product form input, .admin-add-admin form input{
+    margin-top: 15px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+}
+
+.admin-add-client form select, .admin-add-product form select, .admin-add-admin form select {
+    display: block;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    background-color: #e4e4e4;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+    border: none;
+    text-indent: 10px;
+}
+
+.admin-add-client input[type=submit], .admin-add-product input[type=submit], .admin-add-admin input[type=submit] {
+    height: 60px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    border: none;
+    padding: 10px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+}
+
+.register-submit-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-add-client input[type=submit]:hover, .admin-add-product input[type=submit]:hover {
+    background-color: black;
+    transition: 200ms;
+}
+
+#register-product-description textarea {
+    width: 100%;
+    resize: none;
+    min-height: 160px;
+    border: 2px solid #e4e4e4;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.table-data {
+    display: none;
+    width: 1150px;
+    margin-bottom: 20px;
+}
+
+.table-data table {
+    font-family: Bahnschrift;
+    font-size: 15px;
+    color: black;
+    width: 1150px;
+    text-align: center;
+    font-weight: lighter;
+    border-collapse: collapse;
+}
+
+.table-data .thead {
+    background-color: #1b1b1b ;
+    line-height: 40px;
+    color: white;
+}
+
+.table-data table tr a {
+    color: black;
+}
+
+.table-data table tr {
+    background-color:#e7e7e7;
+    line-height: 40px;
+    color: black;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+}
+
+.main-menu {
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu span {
+    font-family: Bahnschrift;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.mm-area {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mm-buttons {
+    width: 250px;
+}
+
+.mm-buttons button {
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    background-color: #1b1b1b;
+    color: white;
+    border: none;
+}
+
+.mm-icon {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 70px;
+}
+
+.admin-order {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.admin-order table input[type=radio]{
+    margin-right: 10px;
+}
+
+.admin-order form input[type=submit]{
+    margin-top: 10px;
+    height: 40px;
+    background-color: #1b1b1b;
+    color: white;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    border: none;
+    width: 250px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+.admin-order form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}

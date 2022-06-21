@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Airside Sans;
+    src: url(../fonts/AirsideSans.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Dades;
+    src: url(../fonts/Dades.ttf);
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0px;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#payment-section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: white;
+    border-left: 2px solid #d4d4d4;
+    border-right: 2px solid #d4d4d4;
+}
+
+.payment-container {
+    width: 1050px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.payment-headline h1 {
+    text-align: center;
+    font-family: Airside Sans;
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.payment-headline {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.payment-text {
+    width: 700px;
+    text-align: justify;
+    font-family: Bahnschrift;
+    font-size: 20px;
+}
+
+.payment-text h3 {
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+@media (min-width:450px) and (max-width:800px) {
+
+    #payment-section {
+        width: 100%;
+    }
+
+    .payment-container {
+        width: 80%;
+    }
+
+    .payment-text {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .payment-text h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .payment-text ul {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+}
+
+section {
+    padding: 60px;
+    margin-top: 30px;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: 2px solid #c9c9c9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    text-align: center;
+    font-family: Bahnschrift;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
+.site-logo {
+    width: 200px;
+}
+
+.admin-form{
+    margin-top: 20px;
+    width: 400px;
+}
+
+.admin-form form {
+    width: 100%;
+}
+
+form label, form input {
+    width: 100%;
+}
+
+form label {
+    font-family: Bahnschrift;
+    font-size: 22px;
+}
+
+form input {
+    border: 1px solid #1b1b1b;
+    height: 35px;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
+form input[type="submit"] {
+    margin-top: 30px;
+    background-color: #1b1b1b;
+    font-family: Bahnschrift;
+    font-size: 18px;
+    color: white;
+    height: 50px;
+}
+

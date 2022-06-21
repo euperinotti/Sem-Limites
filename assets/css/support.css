@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Airside Sans;
+    src: url(../fonts/AirsideSans.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Dades;
+    src: url(../fonts/Dades.ttf);
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0px;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#support-section {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-left: 2px solid #d4d4d4;
+    border-right: 2px solid #d4d4d4;
+}
+
+.support-container {
+    width: 1050px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.support-headline {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b4b4b4;
+
+}
+
+.support-headline h1 {
+    text-align: center;
+    margin: 0px;
+    font-family: Airside Sans;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.support-text {
+    width: 700px;
+    text-align: justify;
+    font-family: Bahnschrift;
+    font-size: 20px;
+}
+
+.support-text p {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.support-text ul {
+    margin-left: 25px;
+}
+
+.support-text ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

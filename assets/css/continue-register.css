@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Airside Sans;
+    src: url(../fonts/AirsideSans.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url(../fonts/bahnschrift.ttf);
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+body {
+    margin: 0px;
+    background-color:#E4E4E4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.continue-register {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-headline {
+    width: 80%;
+}
+
+.continue-register .register-headline h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Airside Sans;
+    color: black;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 40px;
+}
+
+.register-name-box, .register-n-cartao, .register-street-box {
+    grid-column-start:1 ;
+    grid-column-end:3 ;
+}
+
+.register-lastname-box, .register-agency {
+    grid-column-start:3 ;
+    grid-column-end:4 ;
+}
+
+.register-name-box, .register-last-name-box {
+    grid-row-start: 1;
+}
+
+.register-number-box {
+    grid-row-start: 3;
+}
+
+.register-email-box,.register-password-box {
+    grid-row-start: 2;
+}
+
+.register-email-box {
+    grid-column-start:1 ;
+    grid-column-end:3 ;
+}
+
+.register-password-box {
+    grid-column-start:3 ;
+    grid-column-end:5 ;
+}
+.continue-register .form-header {
+    height: 50px;
+    font-size: 35px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+}
+ 
+
+.continue-register form {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.continue-register label {
+    width: 100%;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+}
+
+.continue-register .box-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.continue-register form input{
+    margin-top: 15px;
+    height: 50px;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+}
+
+.continue-register form select {
+    display: block;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    background-color: #e4e4e4;
+    font-size: 15px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: black;
+    width: 100%;
+    border: none;
+    text-indent: 10px;
+}
+
+.register-submit-box input[type=submit] {
+    height: 60px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    border: none;
+    padding: 10px;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.continue-register .register-submit-box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.continue-register .register-submit-box input:hover {
+    background-color: black;
+    transition: 200ms;
+}
